@@ -1,4 +1,10 @@
-# tygr
+[![Build Status](https://travis-ci.org/tygr-development/tygr.svg?branch=master)](https://travis-ci.org/tygr-development/tygr)
+
+[![dependencies Status](https://david-dm.org/tygr-development/tygr/status.svg)](https://david-dm.org/tygr-development/tygr)
+
+[![devDependencies Status](https://david-dm.org/tygr-development/tygr/dev-status.svg)](https://david-dm.org/tygr-development/tygr?type=dev)
+
+# Tygr Development
 
 ## Project setup
 ```

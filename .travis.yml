@@ -1,0 +1,31 @@
+language: node_js
+node_js: 10
+addons:
+  apt:
+    packages:
+      # Required by cypress
+      - libgconf-2-4
+
+cache:
+  yarn: true
+  directories:
+    # Required by cypress
+    - ~/.cache
+
+install: npm ci
+
+script:
+  - yarn lint
+  - yarn test:unit
+  - yarn test:e2e
+  - yarn build
+
+deploy:
+  provider: firebase
+  token:
+    secure: "e/33qGVwaDjn8Pp51lbtuMHCOgAeeHOAHyozftL9/njbwUgWpGMc/bZOiIz9e5wo9kmQ5rc95G8t6PMbIYBNblBx4K5aX8S1iUajdY9tve8NY53fj+G7USJTLFFaGfTpF6ft0ePOGerzjqwNtFCzmKP7DaptG8DleF3N32BmMBpAS+I71dJpiFqblewnuEWkAeZlEpfmK/JD6yX7vMjXeKFvSqGjJyJxBshCcAcVYL+QxYm7hvwfqRS4Ly0pxW7b8dsfH54GzouBUJDv+pLnN0MZEoFaSfMwsYiHbRZ+YQ+CuneqSY/vak1VE2Ez3tdh6vJUmdP62qDmUJNiMhRnwcJBzC1Dyv2rppLx+gp+ZA8hLIqcjHUfXmN5cU6iCrrTvbFf2NJyMUgt9qzD5/ZxHWncKyCLsgVTPKL5gVILVYE8MVzSGSkwCmeZG3Z44u/6KRFoutYgRXq6fdaN3JAC6EifCaydanIZv2rJlB29mBFZNLx5yZFobMAE2TeQR0ajLSnpZ4CzDB3zAYWRfcM8A7uN5XaiDlkfK0NrMLa2hQ8aaZab9S+NlO0xXT7mRBzz4p9G06t4hsMs48Job36BaAQL50OhZ8ggXzgCeezrON6SRVthTH0JpXnkZIxneEP5DL1zufjVU7WFT+SCBC4mGXTiBPjMWYtUNxGIFq+egYc="
+  skip_cleanup: true
+  on:
+    tags: true
+
+after_deploy: yarn test:prod

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Quicksand');
+
+@import "variables";
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .mdc-button, .mdc-tab, .mdc-dialog__body, .mdc-dialog__header__title {
+  font-family: 'Quicksand' !important;
+}
+
+.mdc-button {
+  font-size: 1.3rem !important;
+}
+
+p, .mdc-text-field__input, td {
+  font-family: 'Montserrat' !important;
+}
+
+$mdc-theme-primary: $primary;
+$mdc-theme-accent: $secondary;
+$mdc-theme-background: #fff;
+
+@import "vue-mdc-adapter/dist/button/styles";
+@import "vue-mdc-adapter/dist/card/styles";
+@import "vue-mdc-adapter/dist/textfield/styles";
+@import "vue-mdc-adapter/dist/dialog/styles";
+@import "vue-mdc-adapter/dist/snackbar/styles";
+@import "vue-mdc-adapter/dist/fab/styles";
+@import "vue-mdc-adapter/dist/typography/styles";
+@import "vue-mdc-adapter/dist/icon/styles";
+@import "vue-mdc-adapter/dist/drawer/styles";
+@import "vue-mdc-adapter/dist/layout-app/styles";
+@import "vue-mdc-adapter/dist/toolbar/styles";
+@import "vue-mdc-adapter/dist/linear-progress/styles";
+@import "vue-mdc-adapter/dist/tabs/styles";

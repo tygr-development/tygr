@@ -5,28 +5,23 @@ export default [
     color: '#546e7a',
   },
   {
-    name: 'Cross Platform',
-    path: 'cross-platform',
+    name: '3D Configurator',
+    path: 'configurator',
     color: '#A6A939',
   },
   {
-    name: 'Single Page Application',
-    path: 'single-page-application',
+    name: 'Industrial Automation',
+    path: 'industrial-automation',
     color: '#AEEED6',
   },
   {
-    name: 'Progressive Web App',
-    path: 'progressive-web-app',
+    name: 'Work Sample',
+    path: 'work-sample',
     color: '#FBA047',
   },
   {
-    name: 'Full Stack',
-    path: 'full-stack',
+    name: 'Continuous Improvement',
+    path: 'continuous-improvement',
     color: '#F33A48',
-  },
-  {
-    name: 'Best Practices',
-    path: 'best-practices',
-    color: '#7C2D55',
   },
 ];

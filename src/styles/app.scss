@@ -19,6 +19,11 @@ p, .mdc-text-field__input, td {
   font-family: 'Montserrat' !important;
 }
 
+.container {
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
 $mdc-theme-primary: $primary;
 $mdc-theme-accent: $secondary;
 $mdc-theme-background: #fff;

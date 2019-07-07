@@ -60,20 +60,17 @@ describe('TyGr menu', () => {
 
     cy.wait(500).get('[data-cy=next-page-btn]').click();
 
-    cy.url().should('include', '/cross-platform');
+    cy.url().should('include', '/configurator');
     cy.get('[data-cy=pre-page-btn]').should('be.visible');
 
     cy.wait(500).get('[data-cy=next-page-btn]').click();
-    cy.url().should('include', '/single-page-application');
+    cy.url().should('include', '/industrial-automation');
 
     cy.wait(500).get('[data-cy=next-page-btn]').click();
-    cy.url().should('include', '/progressive-web-app');
+    cy.url().should('include', '/work-sample');
 
     cy.wait(500).get('[data-cy=next-page-btn]').click();
-    cy.url().should('include', '/full-stack');
-
-    cy.wait(500).get('[data-cy=next-page-btn]').click();
-    cy.url().should('include', '/best-practices');
+    cy.url().should('include', '/continuous-improvement');
     cy.get('[data-cy=next-page-btn]').should('not.exist');
 
   });
@@ -81,17 +78,14 @@ describe('TyGr menu', () => {
   it('Goes to previous page on pre page click', () => {
 
     cy.wait(500).get('[data-cy=pre-page-btn]').click();
-    cy.url().should('include', '/full-stack');
+    cy.url().should('include', '/work-sample');
     cy.get('[data-cy=next-page-btn]').should('be.visible');
 
     cy.wait(500).get('[data-cy=pre-page-btn]').click();
-    cy.url().should('include', '/progressive-web-app');
+    cy.url().should('include', '/industrial-automation');
 
     cy.wait(500).get('[data-cy=pre-page-btn]').click();
-    cy.url().should('include', '/single-page-application');
-
-    cy.wait(500).get('[data-cy=pre-page-btn]').click();
-    cy.url().should('include', '/cross-platform');
+    cy.url().should('include', '/configurator');
 
     cy.wait(500).get('[data-cy=pre-page-btn]').click();
     cy.url().should('include', '/home');

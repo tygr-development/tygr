@@ -4,14 +4,12 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 import Home from './components/home';
-
-import BestPractices from './components/best-practices';
-import CrossPlatform from './components/cross-platform';
-import FullStack from './components/full-stack';
 import HomeMain from './components/home-main';
-import PWA from './components/pwa';
-import SPA from './components/spa';
-import Testimonials from './components/testimonials';
+
+import Configurator from './components/Configurator';
+import IndustrialAutomation from './components/IndustrialAutomation';
+import WorkSample from './components/WorkSample';
+import ContinuousImprovement from './components/ContinuousImprovement';
 
 export default new Router({
   mode: 'history',
@@ -21,12 +19,10 @@ export default new Router({
     {
       children: [
         { path: '', component: HomeMain },
-        { path: 'cross-platform', component: CrossPlatform },
-        { path: 'single-page-application', component: SPA },
-        { path: 'progressive-web-app', component: PWA },
-        { path: 'full-stack', component: FullStack },
-        { path: 'best-practices', component: BestPractices },
-        { path: 'testimonials', component: Testimonials},
+        { path: 'configurator', component: Configurator },
+        { path: 'industrial-automation', component: IndustrialAutomation },
+        { path: 'work-sample', component: WorkSample },
+        { path: 'continuous-improvement', component: ContinuousImprovement },
       ],
       component: Home,
       path: '/home',

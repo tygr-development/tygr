@@ -1,6 +1,6 @@
 <template>
 <div>
-<div class="container">
+<div class="container main-container">
 
   <h2 class="title">Mission:</h2>
 
@@ -25,4 +25,14 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss"> @import './common'; </style>
+<style lang="scss">
+@import './common';
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+</style>

@@ -10,7 +10,8 @@
     "test:e2e": "concurrently --success first --kill-others \"yarn serve\" \"cypress run\"",
     "test:e2e:w": "concurrently --success first --kill-others \"yarn serve\" \"cypress open\"",
     "test:unit": "cross-env TS_NODE_COMPILER_OPTIONS={\\\"module\\\":\\\"commonjs\\\"} mocha -r ts-node/register src/**/*.spec.ts",
-    "test:unit:w": "yarn run test:unit --watch"
+    "test:unit:w": "yarn run test:unit --watch",
+    "test:prod": "cross-env CYPRESS_baseUrl=https://tygr.info cypress run"
   },
   "dependencies": {
     "vue": "^2.6.6",

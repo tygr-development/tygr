@@ -192,12 +192,12 @@
 </line>
 
 <text
-  x="200"
+  x="140"
   y="190"
   class="subtitle-text"
   font-size="30"
   opacity="0">
-  Tyler J Grinn
+  Ann Arbor, Michigan
 
   <animate
     attributeName="opacity"

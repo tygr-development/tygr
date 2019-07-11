@@ -45,6 +45,10 @@ export class Store implements redux.Store<any> {
     );
   }
 
+  public [Symbol.observable](): redux.Observable<any> {
+    throw new Error('Method not implemented.');
+  }
+
   public select<T>(selector: Selector<T>): T {
     return selector(this.getState());
   }

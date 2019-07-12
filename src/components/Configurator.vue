@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <a target="_blank" href="https://diybbqpros.com/configurator">
+    <a target="_blank" href="https://bigridgeoutdoorkitchens.com/configurator">
       <h1>Big Ridge Outdoor Kitchens 3D Configurator</h1>
     </a>
     <p>
@@ -13,7 +13,7 @@
       <br>
       Create a 3D interface where customers can drag and drop modules and arrange them themselves
     </p>
-    <a target="_blank" href="https://diybbqpros.com/configurator">
+    <a target="_blank" href="https://bigridgeoutdoorkitchens.com/configurator">
       <img src="@/assets/kitchen-configurator.png"/>
     </a>
   </div>

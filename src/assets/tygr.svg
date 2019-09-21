@@ -136,7 +136,7 @@
   class="subtitle-text"
   font-size="40"
   opacity="0">
-  Web
+  Software
 
   <animate
     attributeName="opacity"
